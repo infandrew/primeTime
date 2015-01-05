@@ -8,7 +8,7 @@ namespace gmp_prime {
 	/*
 	Test for mersen prime number to check if it is prime
 	*/
-	bool Lucas_Lehmer_Test(mpz_class &m, int p) {
+	bool Lucas_Lehmer_Test(mpz_class m, int p) {
 		mpz_class s = 4, sq = 2;
 		int r = 0;
 		for (int i = 3; i <= p; i++) {
