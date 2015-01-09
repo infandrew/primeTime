@@ -1,6 +1,5 @@
 #include "common.h"
 #include <ctime>
-#include <iostream>
 
 double startingTime = (double)clock() / CLOCKS_PER_SEC;
 /*
