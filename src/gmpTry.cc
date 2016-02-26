@@ -5,15 +5,13 @@
 #include "gmpTry.h"
 
 namespace gmp_prime {
-	/*
-	Test for mersen prime number to check if it is prime
-	*/
+	// Test for mersen prime number to check if it is prime
 	bool Lucas_Lehmer_Test(mpz_class m, int p) {
 		mpz_class s = 4, sq = 2;
 		int r = 0;
 		for (int i = 3; i <= p; i++) {
 			s = (s * s - 2) % m;
-			//mpz_powm_ui(s.get_mpz_t(), s.get_mpz_t(), 2, m.get_mpz_t());s -= 2;
+			// mpz_powm_ui(s.get_mpz_t(), s.get_mpz_t(), 2, m.get_mpz_t());s -= 2;
 			/*		if (s <= 1) {
 			 s = s + m - 2;
 			 } else {

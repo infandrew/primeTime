@@ -12,8 +12,9 @@ int main() {
 	//freopen("fullout.txt", "w", stdout);
 	mpz_class p = 1;
 	int k = 1, b = 1, pi = 0;
-	for (int i = 1; i <= 21000000; i++) {
-		mpz_nextprime(p.get_mpz_t(),p.get_mpz_t());
+	for (int i = 1; i <= 10; i++) {
+		mpz_nextprime(p.get_mpz_t(),
+				      p.get_mpz_t());
 		std::bitset<32> bs = std::bitset<32>(p.get_si());
 		if (bs.test(k)) {
 
